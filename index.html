@@ -9,30 +9,55 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- refrence jquery  -->
     <script src="jquery-2.2.4.min.js"></script>
+    <!-- title to the page  -->
     <title>Change Calculator</title>
 </head>
 
 <body>
+    <!-- header in the page -->
     <h1>Change Calculator</h1>
     <div class="form-inline">
         <div class="form-group">
             <label>How much is due for the sale?</label>
             <br>
+            <!-- input box for how much is due for the sale -->
             <input type="text" class="form-control" id="totalDue">
         </div>
         <div class="form-group">
             <label>how much has the customer given you?</label>
             <br>
+            <!-- input box for how much the customer has paid -->
             <input type="text" class="form-control" id="totalPaid">
         </div>
+        <!-- button to calculate the change -->
         <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
-        <p id="dollars"></p>
-        <p id="quarter"></p>
-        <p id="dime"></p>
-        <p id="nickle"></p>
-        <p id="penny"></p>
+        <table style="width:100%">
+            <br>
+            <tr>Dollars
+                <p id="dollars"></p>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td> Quarters
+                    <p id="quarter"></p>
+                </td>
+                <td>Dime
+                    <p id="dime"></p>
+                </td>
+                <td>Nickle
+                    <p id="nickle"></p>
+                </td>
+                <td>Penny
+                    <p id="penny"></p>
+                </td>
+            </tr>
+        </table>
+        <!-- refrence the javascript file -->
         <script src="index.js"></script>
 </body>
 
 </html>
+<!-- AS, RN -->
